@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TimeLineAéro</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="scores">
+            <h2>Scores :</h2>
+            <table>
+                <tr>
+                    <th>Pseudo</th>
+                    <th>Score</th>
+                </tr>
+            </table>
+        </div>
+        <div class="titre"></div>
+        <div class="timeline"></div>
+        <div class="masque">
+            <div class="center form-container">
+                <h1>TimeLine : aéronautique</h1>
+                <div id="divNbJoueurs">
+                    <p class="center">
+                        <label for="entryNbJoueurs">Nombre de joueurs :</label>
+                        <input type="number" id="entryNbJoueurs" min="1" max="8"/>
+                        <input type="button" class="ok" id="btnNbJoueurs" value="OK"/>
+                    </p>
+                    <p id="errorNbJoueurs" class="center error"></p>
+                </div>
+                <input type="button" id="btnCommencer" value="Commencer"/>
+            </div>
+        </div>
+        <p id="message" class="center"></p>
+        <script src="data.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
