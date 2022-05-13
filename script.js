@@ -95,7 +95,15 @@ function construireCarte(carte, jouee) {
     const div = document.createElement("div")
     div.className = "carte"
     const span = document.createElement("span")
-    span.textContent = jouee ? carte.verso : carte.recto
+    if (jouee) {
+        const h = document.createElement("h3")
+        h.textContent = carte.date.slice(0,4)
+        console.log(carte.date.slice(0,4))
+        div.appendChild(h)
+        span.textContent = carte.verso
+    } else {
+        span.textContent = carte.recto
+    }
     div.appendChild(span)
     return div
 }
